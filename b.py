@@ -73,7 +73,7 @@ def show_plan(message):
         max_time, max_slot, expiry, blacklist = 45, 1, "30 Day(s)", "True"
     
     plan_text = f"""
-<b>Username: [@{username}]</b>
+<b>Username: [@{AngelLiveShow}]</b>
 ➖➖➖➖➖➖➖➖
 <b>Plan Details:</b>
 <b> VIP</b>: [<code>{'True' if is_vip(user_id) else 'False'}</code>]
@@ -175,4 +175,3 @@ def remove_vip(message):
         bot.reply_to(message, f"<b>No VIP Plan Found For User [{user_id}]</b>", parse_mode="HTML")
 
 bot.polling()
-    
